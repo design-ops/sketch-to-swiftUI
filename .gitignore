@@ -91,3 +91,5 @@ iOSInjectionProject/
 /node_modules
 /resources
 /output
+
+.DS_Store
