@@ -5,7 +5,6 @@ const fs = require('fs')
 
 function convertSketchToSwiftUI(filename, outputFolder) {
     //console.log("Extracting from " + filename + " to " + outputFolder)
-
     Sketch.fromFile(filename)
         .then(sketch => {
             return processSketchFile(sketch, filename, outputFolder)
@@ -20,4 +19,4 @@ function convertSketchToSwiftUI(filename, outputFolder) {
         })
 }
 
-module.exports = {convertSketchToSwiftUI: convertSketchToSwiftUI}
+module.exports = {convertSketchToSwiftUI}

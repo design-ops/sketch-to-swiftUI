@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const { convertSketchToSwiftUI } = require('../switchToSwiftUI')
+const { convertSketchToSwiftUI } = require('../sketchToSwiftUI')
 
 const argv = require('yargs')
     .scriptName('sketch-to-swiftUI')
@@ -19,4 +19,4 @@ const argv = require('yargs')
     .help('help')
     .argv
 
-convertSketchToSwiftUI(argv['_'][0], argv['o'])
+convertSketchToSwiftUI(argv['file'], argv['o'])
