@@ -10,7 +10,7 @@ extension Stylist {
 
 {{#if styles}}
 {{#each styles}}
-        stylist.addStyle(identifier: "{{name}}") { 
+        stylist.addStyle(identifier: "{{name}}") {
             AnyView($0{{#if text}}
                       .styleText { text in
                           text{{#each text}}
@@ -19,7 +19,7 @@ extension Stylist {
                       {{#each style}}
                         .{{name}}({{{value}}})
                       {{/each}}
-            ) 
+            )
         }
 {{/each}}
 {{/if}}
