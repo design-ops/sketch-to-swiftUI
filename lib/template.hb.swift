@@ -2,6 +2,12 @@ import Foundation
 import SwiftUI
 import StylableSwiftUI
 
+/*
+ * THIS IS AN AUTO-GENERATED FILE. DO NOT EDIT IT.
+ * IF YOU EDIT THIS FILE, THE MOST LIKELY SCENARIO IS THAT
+ * YOUR CHANGES WILL BE OVERRIDDEN NEXT TIME THE FILE IS GENERATED.
+ */
+
 //swiftlint:disable all
 extension Stylist {
     static func create() -> Stylist {

@@ -5,7 +5,8 @@
   "bin": "./bin/cli.js",
   "main": "sketchToSwiftUI.js",
   "scripts": {
-    "convert": "./bin/cli.js"
+    "convert": "./bin/cli.js",
+    "preinstall": "./bin/install_dependencies.sh"
   },
   "repository": "github:design-ops/sketch-to-swiftUI",
   "author": "Design Operations Collective",
