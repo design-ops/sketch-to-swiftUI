@@ -15,11 +15,12 @@
   },
   "homepage": "https://github.com/design-ops/sketch-to-swiftUI#readme",
   "dependencies": {
-    "sketch-to-svg": "^1.0.0",
     "fontkit": "^1.8.0",
     "handlebars": "^4.7.2",
+    "jsdom": "^16.2.2",
     "pdfkit": "^0.11.0",
     "sketch-constructor": "^1.17.0",
+    "sketch-to-svg": "^1.0.0",
     "svg-to-pdfkit": "^0.1.8",
     "system-commands": "^1.1.7",
     "yargs": "^15.1.0"
