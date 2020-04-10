@@ -93,3 +93,6 @@ iOSInjectionProject/
 /output
 
 .DS_Store
+# Put your test sketch files in this directory
+test-sketch-files
+
