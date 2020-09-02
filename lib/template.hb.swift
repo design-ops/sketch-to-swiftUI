@@ -30,6 +30,18 @@ extension Stylist {
 {{/each}}
 {{/if}}
 
+{{#if uiKitProps}}
+    {{#each uiKitProps}}
+        {{#if properties.length}}
+        stylist.addProperty(identifier: "{{name}}") {
+            return [
+                {{#each properties}}{{this}}{{/each}}
+            ]
+        }
+        {{/if}}
+    {{/each}}
+{{/if}}
+
         return stylist
     }
 }
