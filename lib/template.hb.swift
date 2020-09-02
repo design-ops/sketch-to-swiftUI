@@ -35,7 +35,9 @@ extension Stylist {
         {{#if properties.length}}
         stylist.addProperty(identifier: "{{name}}") {
             return [
-                {{#each properties}}{{this}}{{/each}}
+                {{#each properties}}
+                    {{{this}}}{{#if @last}}{{else}},{{/if}}
+                {{/each}}
             ]
         }
         {{/if}}
