@@ -29,22 +29,28 @@ extension Stylist {
         }
 {{/each}}
 {{/if}}
-
-{{#if uiKitProps}}
-    {{#each uiKitProps}}
-        {{#if properties.length}}
-        stylist.addProperty(identifier: "{{name}}") {
-            return [
-                {{#each properties}}
-                    {{{this}}}{{#if @last}}{{else}},{{/if}}
-                {{/each}}
-            ]
-        }
-        {{/if}}
-    {{/each}}
-{{/if}}
-
         return stylist
+    }
+}
+
+extension UIKitStyleContainer {
+    static func create(with stylist: Stylist) -> UIKitStyleContainer {
+        let container = UIKitStyleContainer(stylist: stylist)
+        {{#if uiKitProps}}
+            {{#each uiKitProps}}
+                {{#if properties.length}}
+                container.addProperty(identifier: "{{name}}") {
+                    return [
+                        {{#each properties}}
+                            {{{this}}}{{#if @last}}{{else}},{{/if}}
+                        {{/each}}
+                    ]
+                }
+                {{/if}}
+            {{/each}}
+        {{/if}}
+
+        return container
     }
 }
 //swiftlint:enable all
