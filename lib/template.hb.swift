@@ -42,7 +42,7 @@ extension UIKitStyleContainer {
                 container.addProperty(identifier: "{{name}}") {
                     return [
                         {{#each properties}}
-                            {{{this}}}{{#if @last}}{{else}},{{/if}}
+                            .{{name}}({{{value}}}){{#if @last}}{{else}},{{/if}}
                         {{/each}}
                     ]
                 }
