@@ -53,4 +53,40 @@ extension UIKitStyleContainer {
         return container
     }
 }
+
+/// Casing support to enable casing in iOS 14 only.
+extension Text {
+    enum Casing {
+        case uppercase
+        case lowercase
+        case none
+
+        @available(iOS 14, *)
+        var toSwiftUICase: Text.Case? {
+            switch self {
+            case .uppercase:
+                return .uppercase
+            case .lowercase:
+                return .lowercase
+            case .none:
+                return nil
+            }
+        }
+    }
+}
+
+extension View {
+
+    // Is there a better name for this?
+    @ViewBuilder
+    func withTextCase(_ casing: Text.Casing) -> some View {
+        if #available(iOS 14, *) {
+            self.textCase(casing.toSwiftUICase)
+        } else {
+            self
+        }
+    }
+}
+
+
 //swiftlint:enable all
