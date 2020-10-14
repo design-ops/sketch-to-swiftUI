@@ -81,7 +81,7 @@ extension View {
     @ViewBuilder
     func withTextCase(_ casing: Text.Casing) -> some View {
         if #available(iOS 14, *) {
-            self.textCase(casing?.toSwiftUICase)
+            self.textCase(casing.toSwiftUICase)
         } else {
             self
         }
