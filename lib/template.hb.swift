@@ -79,7 +79,7 @@ extension View {
 
     // Is there a better name for this?
     @ViewBuilder
-    func withTextCase(_ casing: Text.Casing?) -> some View {
+    func withTextCase(_ casing: Text.Casing) -> some View {
         if #available(iOS 14, *) {
             self.textCase(casing?.toSwiftUICase)
         } else {
