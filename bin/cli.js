@@ -15,8 +15,13 @@ const argv = require('yargs')
     .nargs('o', 1)
     .default('o', `./output`)
     .describe('o', 'Folder to output the swift code and assets.')
+    .option('svg', {
+        type: 'boolean',
+        default: false,
+        description: 'Export the assets of mysketchfile.sketch as SVG files'
+    })
     .demandCommand(1)
     .help('help')
     .argv
 
-convertSketchToSwiftUI(argv['file'], argv['o'])
+convertSketchToSwiftUI(argv['file'], argv['o'], argv['svg'])
