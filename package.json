@@ -27,6 +27,7 @@
     "yargs": "^15.1.0"
   },
   "devDependencies": {
-    "jest": "^26.4.2"
+    "jest": "^26.4.2",
+    "rewire": "^4.0.1"
   }
 }
