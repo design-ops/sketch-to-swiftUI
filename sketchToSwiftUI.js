@@ -3,11 +3,11 @@ const { processSketchFile } = require('./lib/processSketch')
 const { generateSwiftUI } = require('./lib/generateSwiftUI')
 const fs = require('fs')
 
-function convertSketchToSwiftUI(filename, outputFolder) {
-    //console.log("Extracting from " + filename + " to " + outputFolder)
+function convertSketchToSwiftUI(filename, outputFolder, outputAsSVG) {
+    // console.log("Extracting from " + filename + " to " + outputFolder)
     Sketch.fromFile(filename)
         .then(sketch => {
-            return processSketchFile(sketch, filename, outputFolder)
+            return processSketchFile(sketch, filename, outputFolder, outputAsSVG)
         })
         .then(styles => {
             fs.mkdirSync(outputFolder, { recursive: true })
