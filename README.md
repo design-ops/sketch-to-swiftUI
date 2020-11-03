@@ -31,11 +31,17 @@ $ npm install
 ## Features
 
 - Extracts layer styles, text styles and assets from a Sketch file.
+- Allows output of assets to be in PDF form or SVG
 
 ## Usage (Optional)
 
 ```shell
 npm run convert ${path-to-sketch-file.sketch}
+```
+
+or if you want your assets as SVG:
+```shell
+npm run convert -- ${path-to-sketch-file.sketch} --svg
 ```
 
 ## Documentation (Optional)
