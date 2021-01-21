@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/design-ops/sketch-to-swiftUI#readme",
   "dependencies": {
+    "decompress": "^4.2.1",
     "fontkit": "^1.8.0",
     "handlebars": "^4.7.2",
     "jsdom": "^16.2.2",
