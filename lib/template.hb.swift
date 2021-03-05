@@ -8,7 +8,7 @@ import StylableSwiftUI
  * YOUR CHANGES WILL BE OVERRIDDEN NEXT TIME THE FILE IS GENERATED.
  */
 
-//swiftlint:disable all
+// swiftlint:disable all
 extension Stylist {
     static func create() -> Stylist {
 
@@ -129,4 +129,4 @@ struct RoundedCorners: Shape {
     }
 }
 
-//swiftlint:enable all
+// swiftlint:enable all
