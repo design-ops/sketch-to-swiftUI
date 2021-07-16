@@ -128,4 +128,13 @@ struct RoundedCorners: Shape {
     }
 }
 
+{{#if theming}}
+// Add support for themes
+extension Stylist.Theme {
+    {{#each theming.themes}}
+    static let {{{ varName }}} = Stylist.Theme(name: "{{{ name }}}")
+    {{/each}}
+}
+{{/if}}
+
 // swiftlint:enable all
