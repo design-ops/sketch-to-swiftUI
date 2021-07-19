@@ -130,9 +130,9 @@ struct RoundedCorners: Shape {
 
 {{#if theming}}
 // Add support for themes
-extension Stylist.Theme {
+extension Theme {
     {{#each theming.themes}}
-    static let {{{ varName }}} = Stylist.Theme(name: "{{{ name }}}")
+    static let {{{ varName }}} = Theme(name: "{{{ name }}}")
     {{/each}}
 }
 {{/if}}
