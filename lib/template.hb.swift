@@ -129,4 +129,20 @@ extension Theme {
     {{/each}}
 }
 
+public extension StrokeStyle {
+    init(lineWidth: CGFloat? = nil,
+         lineCap: CGLineCap? = nil,
+         lineJoin: CGLineJoin? = nil,
+         miterLimit: CGFloat? = nil,
+         dash: [CGFloat]? = nil,
+         dashPhase: CGFloat? = nil) {
+        self.init(lineWidth: lineWidth ?? 1, 
+                  lineCap: lineCap ?? .butt,
+                  lineJoin: lineJoin ?? .miter,
+                  miterLimit: miterLimit ?? 10,
+                  dash: dash ?? [],
+                  dashPhase: dashPhase ?? 0)
+    }
+}
+
 // swiftlint:enable all
