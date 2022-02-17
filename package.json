@@ -1,6 +1,7 @@
 {
   "name": "sketch-to-swiftui",
   "version": "0.9.0",
+  "node": ">=16",
   "description": "",
   "bin": "./bin/cli.js",
   "main": "sketchToSwiftUI.js",
