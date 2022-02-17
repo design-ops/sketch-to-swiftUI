@@ -1,6 +1,7 @@
 {
   "name": "sketch-to-swiftui",
   "version": "0.9.0",
+  "node": ">=16",
   "description": "",
   "bin": "./bin/cli.js",
   "main": "sketchToSwiftUI.js",
@@ -17,19 +18,21 @@
   "homepage": "https://github.com/design-ops/sketch-to-swiftUI#readme",
   "dependencies": {
     "camelcase": "^6.2.0",
+    "canvas": "^2.9.0",
     "decompress": "^4.2.1",
     "fontkit": "^1.8.0",
     "handlebars": "^4.7.7",
-    "jsdom": "^16.2.2",
-    "pdfkit": "^0.11.0",
-    "sketch-constructor": "^1.17.0",
+    "jsdom": "^19.0.0",
+    "pdfkit": "^0.13.0",
+    "sharp": "^0.30.1",
+    "sketch-constructor": "^1.26.0",
     "sketch-to-svg": "^1.0.2",
     "svg-to-pdfkit": "^0.1.8",
     "system-commands": "^1.1.7",
-    "yargs": "^15.1.0"
+    "yargs": "^17.3.1"
   },
   "devDependencies": {
-    "jest": "^26.4.2",
-    "rewire": "^4.0.1"
+    "jest": "^27.5.1",
+    "rewire": "^6.0.0"
   }
 }
