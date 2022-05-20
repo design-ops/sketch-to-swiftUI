@@ -26,7 +26,7 @@
     "pdfkit": "^0.13.0",
     "sharp": "^0.30.1",
     "sketch-constructor": "^1.26.0",
-    "sketch-to-svg": "^1.0.2",
+    "sketch-to-svg": "^1.1.0",
     "svg-to-pdfkit": "^0.1.8",
     "system-commands": "^1.1.7",
     "yargs": "^17.3.1"
