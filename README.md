@@ -28,6 +28,16 @@ $ npm install
 
 ---
 
+If you encounter a problem installing node-canvas, rebuild it from source:
+
+```shell
+brew install pkg-config cairo pango libpng jpeg giflib librsvg pixman
+```
+and then
+```shell
+npm install --build-from-source
+```
+
 ## Features
 
 - Extracts layer styles, text styles and assets from a Sketch file.
