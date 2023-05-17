@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 
-const { convertSketchToSwiftUI } = require('../sketchToSwiftUI')
+import { convertSketchToSwiftUI } from '../sketchToSwiftUI.js'
+import yargs from 'yargs'
+import { hideBin } from 'yargs/helpers'
 
-const argv = require('yargs')
+const argv = yargs(hideBin(process.argv))
     .scriptName('sketch-to-swiftUI')
     .command('$0 <file>', 'Extracts the provided sketch file into swiftUI', yargs => {
         yargs.positional('file', {

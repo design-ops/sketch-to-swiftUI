@@ -1,9 +1,10 @@
-const { Sketch } = require('sketch-constructor')
-const { processSketchFile } = require('./lib/processSketch')
-const { generateSwiftUI } = require('./lib/generateSwiftUI')
-const fs = require('fs')
+import pkg from 'sketch-constructor'
+const { Sketch } = pkg;
+import { processSketchFile  } from './lib/processSketch.js'
+import { generateSwiftUI } from './lib/generateSwiftUI.js'
+import fs from 'fs'
 
-function convertSketchToSwiftUI(filename, outputFolder, outputAsSVG) {
+export const convertSketchToSwiftUI = (filename, outputFolder, outputAsSVG) => {
     // console.log("Extracting from " + filename + " to " + outputFolder)
     Sketch.fromFile(filename)
         .then(sketch => {
@@ -18,5 +19,3 @@ function convertSketchToSwiftUI(filename, outputFolder, outputAsSVG) {
             console.log("Failed to extract", err)
         })
 }
-
-module.exports = {convertSketchToSwiftUI}
