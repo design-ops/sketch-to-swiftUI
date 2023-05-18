@@ -1,7 +1,6 @@
-const rewire = require("rewire");
-const processLayerStyles = rewire("../lib/processLayerStyles.js");
 
-const cornerRadius = processLayerStyles.__get__("cornerRadius");
+import { exportedForTesting } from '../lib/processLayerStyles.js';
+const { cornerRadius } = exportedForTesting;
 
 test("Returns null when object cant be figured out", () => {
   const emptyPoints = { layers: [] };
