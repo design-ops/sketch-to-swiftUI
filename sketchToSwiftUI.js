@@ -8,7 +8,8 @@ export const convertSketchToSwiftUI = (filename, outputFolder, outputAsSVG) => {
     // console.log("Extracting from " + filename + " to " + outputFolder)
     Sketch.fromFile(filename)
         .then(sketch => {
-            return processSketchFile(sketch, filename, outputFolder, outputAsSVG)
+            const file = processSketchFile(sketch, filename, outputFolder, outputAsSVG)
+            return file
         })
         .then(styles => {
             fs.mkdirSync(outputFolder, { recursive: true })
