@@ -1,4 +1,4 @@
-const { matchScore } = require('../lib/identifierMatcher');
+import { matchScore } from '../lib/identifierMatcher.js'
 
 test('Calculates correct score for each identifier', () => {
     const specific = "home/header/searchBar/label"
