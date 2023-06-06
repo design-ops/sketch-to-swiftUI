@@ -12,7 +12,7 @@ import StylableSwiftUI
 extension Stylist {
     static func create() -> Stylist {
 
-        let stylist = Stylist()
+        let stylist: Stylist = Stylist()
 
 {{#if styles}}
 {{#each styles}}
@@ -34,7 +34,7 @@ extension Stylist {
 
 extension UIKitStyleContainer {
     static func create(with stylist: Stylist) -> UIKitStyleContainer {
-        let container = UIKitStyleContainer(stylist: stylist)
+        let container: UIKitStyleContainer = UIKitStyleContainer(stylist: stylist)
         {{#if uiKitProps}}
             {{#each uiKitProps}}
                 {{#if properties.length}}

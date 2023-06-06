@@ -6,6 +6,7 @@
 ## Installation
 
 - Clone this repository
+- Install brew dependencies
 - Run `npm i`
 
 ### Clone
