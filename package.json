@@ -1,8 +1,8 @@
 {
   "name": "sketch-to-swiftui",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "engines": {
-    "node": "18.16.0"
+    "node": "18.17.0"
   },
   "description": "",
   "bin": "./bin/cli.js",
