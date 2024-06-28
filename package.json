@@ -27,7 +27,7 @@
     "handlebars": "^4.7.7",
     "jsdom": "^22.0.0",
     "pdfkit": "^0.13.0",
-    "sharp": "^0.32.1",
+    "sharp": "^0.32.6",
     "sketch-constructor": "^1.26.0",
     "sketch-to-svg": "^1.1.0",
     "svg-to-pdfkit": "^0.1.8",
